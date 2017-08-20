@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
-                android:text="3"
+                android:text="0"
                 android:textAllCaps="true"
                 android:textSize="48dp"
                 />
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
-                android:text="37"
+                android:text="0"
                 android:textAllCaps="true"
                 android:textSize="48dp"
                 />
@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
-                android:text="3"
+                android:text="0"
                 android:textAllCaps="true"
                 android:textSize="48dp"
                 />
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="8dp"
-                android:text="27"
+                android:text="0"
                 android:textAllCaps="true"
                 android:textSize="48dp"
                 />
@@ -135,6 +135,8 @@
         android:text="+"
         android:layout_above="@+id/button_team1goal_minus"
         android:layout_marginLeft="8dp"
+        android:onClick="increaseGoalTeam1"
+
         />
 
     <Button
@@ -146,7 +148,7 @@
         android:text="-"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="24dp"
-
+        android:onClick="decreaseGoalTeam1"
         />
 
 
@@ -158,6 +160,7 @@
         android:text="+"
         android:layout_above="@+id/button_team1_minus"
         android:layout_marginLeft="8dp"
+        android:onClick="increaseFoulTeam1"
         />
 
     <Button
@@ -169,6 +172,7 @@
         android:text="-"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="decreaseFoulTeam1"
 
         />
 
@@ -219,6 +223,7 @@
         android:text="+"
         android:layout_above="@+id/button_team2goal_minus"
         android:layout_marginRight="8dp"
+        android:onClick="increaseGoalTeam2"
         />
 
     <Button
@@ -230,6 +235,7 @@
         android:text="-"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="24dp"
+        android:onClick="decreaseGoalTeam2"
         />
 
 
@@ -243,6 +249,7 @@
         android:layout_alignParentRight="true"
         android:text="+"
         android:layout_marginRight="8dp"
+        android:onClick="increaseFoulTeam2"
 
         />
     <Button
@@ -254,5 +261,6 @@
         android:text="-"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="decreaseFoulTeam2"
         />
 </RelativeLayout>
