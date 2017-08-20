@@ -19,46 +19,64 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
     }
 
-    public void increaseGoalTeam1(View v){
+    public void resetAllScores(View v)
+    {
+        goalScoreTeam1 = 0;
+        goalScoreTeam2 = 0;
+        foulScoreTeam1 = 0;
+        foulScoreTeam2 = 0;
+
+        displayGoalScoreTeam1(goalScoreTeam1);
+        displayGoalScoreTeam2(goalScoreTeam2);
+        displayFoulScoreTeam1(foulScoreTeam1);
+        displayFoulScoreTeam2(foulScoreTeam2);
+    }
+
+    public void increaseGoalTeam1(View v)
+    {
         goalScoreTeam1 += 1;
         displayGoalScoreTeam1(goalScoreTeam1);
     }
 
-    public void decreaseGoalTeam1(View v){
+    public void decreaseGoalTeam1(View v)
+    {
         goalScoreTeam1 -= 1;
         displayGoalScoreTeam1(goalScoreTeam1);
     }
 
-    public void increaseGoalTeam2(View v){
+    public void increaseGoalTeam2(View v)
+    {
         goalScoreTeam2 += 1;
         displayGoalScoreTeam2(goalScoreTeam2);
     }
 
-    public void decreaseGoalTeam2(View v){
+    public void decreaseGoalTeam2(View v)
+    {
         goalScoreTeam2 -= 1;
         displayGoalScoreTeam2(goalScoreTeam2);
     }
 
 
-
-
-
-    public void increaseFoulTeam1(View v){
+    public void increaseFoulTeam1(View v)
+    {
         foulScoreTeam1 += 1;
         displayFoulScoreTeam1(foulScoreTeam1);
     }
 
-    public void decreaseFoulTeam1(View v){
+    public void decreaseFoulTeam1(View v)
+    {
         foulScoreTeam1 -= 1;
         displayFoulScoreTeam1(foulScoreTeam1);
     }
 
-    public void increaseFoulTeam2(View v){
+    public void increaseFoulTeam2(View v)
+    {
         foulScoreTeam2 += 1;
         displayFoulScoreTeam2(foulScoreTeam2);
     }
 
-    public void decreaseFoulTeam2(View v){
+    public void decreaseFoulTeam2(View v)
+    {
         foulScoreTeam2 -= 1;
         displayFoulScoreTeam2(foulScoreTeam2);
     }
